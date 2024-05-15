@@ -9,6 +9,15 @@
 <body>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
+    <div id="app">
+
+        <h1>Email List</h1>
+        <ul>
+            <li v-for="element in emailList" v-show="emailList.length == 10">{{ element }}</li>
+        </ul>
+
+    </div>
+
     <script src="./main.js"></script>
 </body>
 </html>
